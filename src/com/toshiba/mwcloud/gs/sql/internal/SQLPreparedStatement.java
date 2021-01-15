@@ -303,7 +303,7 @@ extends SQLStatement implements PreparedStatement, LaterPreparedStatement {
 	@Override
 	public void setTimestamp(int parameterIndex, Timestamp x, Calendar cal)
 			throws SQLException {
-        setValue(parameterIndex, x);
+		setValue(parameterIndex, x);
 	}
 
 	@Override
