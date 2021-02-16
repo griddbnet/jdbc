@@ -213,7 +213,7 @@ extends SQLStatement implements PreparedStatement, LaterPreparedStatement {
 	@Override
 	public void setObject(int parameterIndex, Object x, int targetSqlType)
 			throws SQLException {
-		throw SQLErrorUtils.errorNotSupportedFeature();
+        setValue(parameterInex, x);
 	}
 
 	@Override
